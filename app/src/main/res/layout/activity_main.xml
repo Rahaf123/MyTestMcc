@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:textSize="14sp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Contact"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@id/Name"
+        android:layout_below="@id/Name"
+        android:ems="10"
+
+        android:textSize="14sp"
+        android:hint="Number phone"
+        />
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@id/Number"
+        android:layout_below="@id/Number"
+        android:textSize="14sp"
+        android:hint="Address"
+        android:ems="10"
+        />
+    <Button
+       android:layout_marginTop="47dp"
+        android:id="@+id/save"
+        android:layout_width="200dp"
+        android:layout_below="@id/Address"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFC107"
+        />
+    <Button
+
+        android:id="@+id/get"
+        android:layout_below="@id/save"
+        android:layout_marginTop="27dp"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFC107"
+        android:text="Get"
+        />
+</RelativeLayout>
